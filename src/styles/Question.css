@@ -1,0 +1,94 @@
+.Question {
+    margin-top: 100px;
+}
+
+.questionText {
+    font-weight: 500;
+    font-size: 70px;
+    margin-bottom: 50px;
+}
+
+.choiceLabel {
+    font-size: 30px;
+    font-weight: 400;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: .1s;
+}
+
+.choiceLabel:hover {
+    color: rgb(105, 105, 105);
+}
+
+.choiceInput {
+    height: 20px;
+    width: 20px;
+    accent-color: black;
+}
+
+.choiceBlock {
+    margin: 25px 0;
+    display: flex;
+    align-items: center;
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: end;
+}
+
+.button-wrapper button {
+    background-color: transparent;
+    border: 2px solid black;
+    padding: 8px 25px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.button-wrapper button:hover {
+    background-color: black;
+    color: white;
+}
+
+@media (max-width: 480px) {
+    .Question {
+        margin-top: 80px;
+    }
+    .questionText {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    .choiceLabel {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    .choiceInput  {
+        height: 15px;
+        width: 15px;
+    }
+    .button-wrapper button {
+        font-size: 16px;
+        padding: 8px 20px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .questionText {
+        font-size: 50px;
+        margin-bottom: 50px;
+    }
+    .choiceLabel {
+        font-size: 25px;
+        margin-left: 15px;
+    }
+    .choiceInput  {
+        height: 20px;
+        width: 20px;
+    }
+    .button-wrapper button {
+        font-size: 20px;
+        padding: 8px 25px;
+    }
+}

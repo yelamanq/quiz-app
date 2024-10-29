@@ -1,0 +1,99 @@
+@font-face {
+    font-family: "ClashDisplay";
+    src: url("../fonts/clashdisplay/ClashDisplay-Semibold.otf") format("opentype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "ClashDisplay";
+    src: url("../fonts/clashdisplay/ClashDisplay-Medium.otf") format("opentype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "ClashDisplay";
+    src: url("../fonts/clashdisplay/ClashDisplay-Regular.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "ClashDisplay";
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+}
+
+.App {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 100px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 60px);
+    align-items: center;
+    justify-content: center;
+}
+
+.main__title {
+    font-weight: 600;
+    font-size: 80px;
+    text-align: center;
+}
+
+.main__button {
+    background-color: black;
+    font-size: 30px;
+    border: 2px solid black;
+    color: white;
+    padding: 10px 50px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.main__button:hover {
+    background-color: transparent;
+    border: 2px solid black;
+    color: black;
+}
+
+@media (max-width: 480px) {
+    .App {
+        padding: 30px 50px;
+    }
+    .main__title {
+        text-align: center;
+        font-size: 40px;
+    }
+    .main__button {
+        font-size: 20px;
+        padding: 10px 30px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .App {
+        padding: 30px 70px;
+    }
+    .main__title {
+        text-align: center;
+        font-size: 60px;
+    }
+    .main__button {
+        font-size: 25px;
+        padding: 10px 40px;
+    }
+}

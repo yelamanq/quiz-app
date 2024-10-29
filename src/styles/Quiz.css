@@ -1,0 +1,22 @@
+.Quiz {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.quiz__header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+@media (max-width: 480px) {
+    .quiz__header {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    
+}

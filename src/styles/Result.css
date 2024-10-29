@@ -1,0 +1,72 @@
+.Result {
+    display: flex;
+    flex-direction: column;
+}
+
+.result__correctAnswer {
+    color: green;
+}
+
+.result__incorrectAnswer {
+    color: red;
+}
+
+.yourResult {
+    font-weight: 500;
+    font-size: 70px;
+    text-align: center;
+    margin: 60px 0;
+}
+
+.result__questionBlock {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+
+.result__questionText {
+    font-weight: 500;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.result__choiceText {
+    font-weight: 400;
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+@media (max-width: 480px) {
+    .yourResult {
+        font-size: 35px;
+    }
+    .result__questionText {
+        font-size: 30px;
+    }
+    .result__choiceText {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .yourResult {
+        font-size: 45px;
+    }
+    .result__questionText {
+        font-size: 40px;
+    }
+    .result__choiceText {
+        font-size: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
